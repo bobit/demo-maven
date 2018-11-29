@@ -51,6 +51,11 @@ public class AtomicApplication {
 		System.out.println(atomicUserRef.get().getName());
 		System.out.println(atomicUserRef.get().getOld());
 
+		//		1
+		//		2
+		//		3
+		//		1
+		//		lisi
+		//		18
 	}
-
 }
