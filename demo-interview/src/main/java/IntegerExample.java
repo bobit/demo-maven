@@ -6,7 +6,7 @@ import java.lang.reflect.Field;
  * 反射
  * Integer缓存 -128 127
  * 装箱
- *
+ * <p>
  * javap是 Java class文件分解器,可以反编译(即对javac编译的文件进行反编译),也可以查看java编译器生成的字节码。
  * javap -c IntegerExample.class
  *
@@ -16,11 +16,11 @@ import java.lang.reflect.Field;
 public class IntegerExample {
     public static void main(String args[]) throws NoSuchFieldException, IllegalAccessException {
         Integer a = 1, b = 2; //装箱 Integer a = Integer.valueOf(1)
-        System.out.println ("before:a=" + a + ",b=" + b);
+        System.out.println("before:a=" + a + ",b=" + b);
         //todo
         //swag(a,b);//
-        swag1(a,b);
-        System.out.println ("before:a=" + a + ",b=" + b);
+        swag1(a, b);
+        System.out.println("before:a=" + a + ",b=" + b);
     }
 
 
@@ -34,14 +34,14 @@ public class IntegerExample {
         //int tmp = a.intValue();
         Integer tmp = new Integer(a.intValue());
 
-        field.set(a,b.intValue());//装箱 i1 -> Integer.valueOf(b.intValue).intValue()
-        field.set(b,tmp);         //Integer.valueOf(tmp).intValue()
+        field.set(a, b.intValue());//装箱 i1 -> Integer.valueOf(b.intValue).intValue()
+        field.set(b, tmp);         //Integer.valueOf(tmp).intValue()
         System.out.print(tmp);
     }
 
     private static void swag(Integer a, Integer b) {
         Integer tmp = a;
-        a = b ;
+        a = b;
         b = tmp;
     }
 

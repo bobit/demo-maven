@@ -66,10 +66,12 @@ public class SignatureExample {
         }
     }
 
+    // 椭圆曲线数字签名算法
     public static void jdkECDSA() {
         // 1. 初始化 密钥
         try {
             KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("EC");
+            // 密钥长度:112～571,默认:256
             keyPairGenerator.initialize(256);
             KeyPair keyPair = keyPairGenerator.generateKeyPair();
             ECPublicKey ecPublicKey = (ECPublicKey) keyPair.getPublic();
