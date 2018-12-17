@@ -1,4 +1,4 @@
-package design.patterns;
+package com.demo.designpattern;
 
 /**
  * 单例模式（Singleton Pattern）
