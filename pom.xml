@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.demo</groupId>
-	<artifactId>demo-java</artifactId>
+	<artifactId>demo-maven</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
 		<module>demo-jvm</module>
