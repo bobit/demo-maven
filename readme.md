@@ -22,4 +22,12 @@
 - 堆排序
 [HeapSort.java](https://github.com/bobit/demo-maven/blob/master/demo-algorithm/src/main/java/com/demo/algorithm/HeapSort.java)
 
+ 
+<details>
+  <summary>算法相关</summary>
 
+- [x] [MergeSortImproved.java](https://github.com/bobit/demo-maven/blob/master/demo-algorithm/src/main/java/com/demo/algorithm/MergeSortImproved.java)
+- [ ] [HeapSort.java](https://github.com/bobit/demo-maven/blob/master/demo-algorithm/src/main/java/com/demo/algorithm/HeapSort.java)
+
+</details>
+ 
