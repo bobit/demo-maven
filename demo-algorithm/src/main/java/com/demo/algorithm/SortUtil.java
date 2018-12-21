@@ -32,9 +32,9 @@ public class SortUtil {
                     new SelectionSort(),
                     new ShellSort(),
                     new QuickSort(),
-                    new ImprovedQuickSort(),
+                    new QuickSortImproved(),
                     new MergeSort(),
-                    new ImprovedMergeSort(),
+                    new MergeSortImproved(),
                     new HeapSort()
             };
 
