@@ -1,7 +1,7 @@
 package com.demo.algorithm;
 
 /**
- * Shell排序
+ * 希尔排序
  *
  * @Author: zhangb
  * @Date: 2015/12/20 21:44

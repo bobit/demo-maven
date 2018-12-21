@@ -58,7 +58,7 @@ public class SortTests {
 
     @Test
     public void ImprovedQuickSortTest() {
-        SortUtil.sort(intArr, SortUtil.IMPROVED_QUICK);
+        SortUtil.sort(intArr, SortUtil.QUICK_IMPROVED);
     }
 
     @Test
@@ -68,7 +68,7 @@ public class SortTests {
 
     @Test
     public void ImprovedMergeSortTest() {
-        SortUtil.sort(intArr, SortUtil.IMPROVED_MERGE);
+        SortUtil.sort(intArr, SortUtil.MERGE_IMPROVED);
     }
 
     @Test
