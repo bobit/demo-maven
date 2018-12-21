@@ -13,18 +13,17 @@ public class SortUtil {
     public final static int SELECTION = 3;
     public final static int SHELL = 4;
     public final static int QUICK = 5;
-    public final static int IMPROVED_QUICK = 6;
+    public final static int QUICK_IMPROVED = 6;
     public final static int MERGE = 7;
-    public final static int IMPROVED_MERGE = 8;
+    public final static int MERGE_IMPROVED = 8;
     public final static int HEAP = 9;
 
     public static void sort(int[] data) {
-        sort(data, IMPROVED_QUICK);
+        sort(data, QUICK_IMPROVED);
     }
 
     private static String[] name =
-            {"insert", "bubble", "selection", "shell", "quick", "improved_quick", "merge", "improved_merge", "heap"
-            };
+            {"insert", "bubble", "selection", "shell", "quick", "improved_quick", "merge", "improved_merge", "heap"};
     private static Sort[] impl = new Sort[]
             {
                     new InsertSort(),
