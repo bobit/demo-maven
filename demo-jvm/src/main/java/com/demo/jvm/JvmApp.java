@@ -11,8 +11,8 @@ public class JvmApp {
     private static int count = 0;
 
     public static void main(String[] args) {
-        JvmApp test = new JvmApp();
-        test.test();
+        JvmApp app = new JvmApp();
+        app.test();
     }
 
     /**
@@ -25,6 +25,7 @@ public class JvmApp {
         } catch (Throwable e) {
             System.out.println("递归调用次数" + count);
             e.printStackTrace();
+			
             //Exception已经捕获不了JVM抛出的StackOverflowError
             //java.lang.StackOverflowError
             //	at sun.misc.Unsafe.compareAndSwapLong(Native Method)

@@ -1,0 +1,35 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure("2") do |config|
+  config.vm.box = "CentOS-7-hyperv"
+  config.vm.box_check_update = false
+  config.vm.provider "hyperv"
+
+  $num_vms = 3
+  (1..$num_vms).each do |id|
+   config.vm.define "k8s-node#{id}" do |node|
+     node.vm.hostname = "k8s-node#{id}"
+     node.vm.network :private_network, ip: "172.30.166.10#{id}",  auto_config: true
+     node.vm.provider :hyperv do |vb, override|
+       vb.memory = 512
+       vb.cpus = 1
+     end
+   end
+  end
+  config.vm.define "k8s-server" do |node|
+   node.vm.hostname = "k8s-server"
+   node.vm.network :private_network, ip: "172.30.166.100",  auto_config: true
+   config.vm.network "forwarded_port", guest: 8080, host: 8080 # k8s-apiserver
+   config.vm.network "forwarded_port", guest: 8086, host: 8086 # kubectl proxy
+   config.vm.network "forwarded_port", guest: 443, host: 4443 # harbor
+   node.vm.provider :hyperv do |vb, override|
+     vb.memory = 512
+     vb.cpus = 1
+   end
+  end
+end
