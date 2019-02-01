@@ -1,4 +1,4 @@
-package com.example.demoactivemq;
+package com.demo.activemq;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
