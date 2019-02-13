@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.demo</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>demo-jpa-mybatis-mysql</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo</name>
+    <name>demo-jpa-mybatis-mysql</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -40,8 +40,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!--添加了Druid依赖和MyBatis Generator插件-->
-        <!-- 阿里巴巴连接池Druid -->
+        <!-- todo add 阿里巴巴连接池Druid依赖-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
@@ -56,7 +55,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
-            <!-- MyBatis Generator 插件 -->
+            <!-- todo add MyBatis Generator 插件 -->
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
                 <artifactId>mybatis-generator-maven-plugin</artifactId>

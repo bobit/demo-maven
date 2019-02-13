@@ -57,9 +57,9 @@
 
         <!-- JDBC连接配置 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/test"
+                        connectionURL="jdbc:mysql://localhost:3306/test1"
                         userId="root"
-                        password="123456"/>
+                        password="123111"/>
 
         <!--
             Java类型处理器
@@ -87,8 +87,8 @@
             targetPackage:生成的类要放的包,真实的包受enableSubPackages属性控制
             targetProject:目标项目,指定一个存在的目录下,生成的内容会放到指定目录中,如果目录不存在,MBG不会自动建目录
         -->
-        <javaModelGenerator targetPackage="com.study.springboot.mybatis.model"
-                            targetProject="E:\WorkSpace\study\springboot\mybatis\src\main\java">
+        <javaModelGenerator targetPackage="com.demo.springboot.mybatis.model"
+                            targetProject="F:\RepoSpaces\public\github\demo-maven\demo-jpa-mybatis-mysql\src\main\java">
 
             <!-- 自动为每一个生成的类创建一个构造方法,构造方法包含了所有的field,而不是使用setter -->
             <!--<property name="constructorBased" value="false"/>-->
@@ -122,7 +122,7 @@
             targetPackage/targetProject:同javaModelGenerator
         -->
         <sqlMapGenerator targetPackage="mapper"
-                         targetProject="E:\WorkSpace\study\springboot\mybatis\src\main\resources">
+                         targetProject="F:\RepoSpaces\public\github\demo-maven\demo-jpa-mybatis-mysql\src\main\resources">
             <!-- 在targetPackage的基础上,根据数据库的schema再生成一层package,最终生成的类放在这个package下,默认为false -->
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
@@ -137,8 +137,8 @@
             3. XMLMAPPER:会生成Mapper接口,接口完全依赖XML
             注意,如果context是MyBatis3Simple:只支持ANNOTATEDMAPPER和XMLMAPPER
         -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.study.springboot.mybatis.mapper"
-                             targetProject="E:\WorkSpace\study\springboot\mybatis\src\main\java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.demo.springboot.mybatis.mapper"
+                             targetProject="F:\RepoSpaces\public\github\demo-maven\demo-jpa-mybatis-mysql\src\main\java">
             <!-- 在targetPackage的基础上,根据数据库的schema再生成一层package,最终生成的类放在这个package下,默认为false -->
             <property name="enableSubPackages" value="false"/>
 
