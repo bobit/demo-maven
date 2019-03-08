@@ -1,11 +1,11 @@
 package com.demo.designpattern.factory;
 
 /**
- * 工厂模式
+ * 发送接口
  *
  * @Author: zhangb
  * @Date: 2018/12/13 23:07
  */
-public interface Sender {
+public interface ISender {
     public void Send();
 }

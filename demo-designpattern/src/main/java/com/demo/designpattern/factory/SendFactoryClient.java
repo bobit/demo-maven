@@ -1,15 +1,15 @@
 package com.demo.designpattern.factory;
 
 /**
- * 工厂模式
+ * 简单工厂模式Demo
  *
  * @Author: zhangb
  * @Date: 2018/12/13 23:13
  */
-public class FactoryTest {
+public class SendFactoryClient {
     public static void main(String[] args) {
         SendFactory factory = new SendFactory();
-        Sender sender = factory.produce("sms");
+        ISender sender = factory.produce("sms");
         sender.Send();
     }
 }

@@ -22,7 +22,7 @@ public class DemoApplicationTests {
     private UserJPA userJPA;
 
     @Test
-    public void contextLoads() {
+    public void generatorConfigTest() {
         System.out.println(userMapper.selectByPrimaryKey(1).getUsername());
 //        System.out.println(userJPA.findOne(1).getUsername());
         System.out.println(userJPA.findById(1).get().getUsername());

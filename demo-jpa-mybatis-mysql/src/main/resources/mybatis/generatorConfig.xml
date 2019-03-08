@@ -59,8 +59,8 @@
         <!--<jdbcConnection driverClass="com.mysql.jdbc.Driver"-->
         <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
                         connectionURL="jdbc:mysql://bobit.mysql.rds.aliyuncs.com:6666/test_hrm_db"
-                        userId="root"
-                        password="root" >
+                        userId="zhangb"
+                        password="111111" >
 
             <!-- connectionURL属性，防止乱码 -->
             <property name="useUnicode" value="true"/>
