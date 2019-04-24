@@ -1,5 +1,0 @@
-logging:
-  level:
-    com.demo:DEBUG
-  file: ./logs/logs.log
-  root: INFO
